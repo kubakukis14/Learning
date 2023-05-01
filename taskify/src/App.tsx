@@ -22,7 +22,7 @@ const App: React.FC = () => {
     <div className="App">
       <span className="App-header">Taskify</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-      <TodoList todos={todos} setTodos={setTodo}/>
+      <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
