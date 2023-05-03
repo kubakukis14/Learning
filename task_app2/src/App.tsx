@@ -5,11 +5,12 @@ import { Todo } from './model'
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>(() => {
+    
     const local = localStorage.getItem("todos")
     if (local) {
       return JSON.parse(local)
     }
-    
+
     return []
   })
 
